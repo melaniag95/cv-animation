@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esercitiamoci ad usare flexbox per creare layout">
+    <link rel="stylesheet" href="assets/css/style.css">
+   <title>Il mio Curriculum Vitae</title>
+</head>
+
+
+<body>
+    
+    <header>
+        <h1 id="titolo">Curriculum Vitae - Carmela Guida Aquilante</h1>
+        <h2 id="sottotitolo">Web developer</h2>
+    </header>
+    
+
+    
+    <main id="main-container">
+
+        <div class="flex-container">
+
+            <!--Info personali-->
+            <section id="info-personali">
+                <h2 class="titolo-paragrafo">Info personali</h2>
+                <p><strong>Nome:</strong> Carmela</p>
+                <p><strong>Cognome:</strong> Guida Aquilante</p>
+                <p><strong>Data di nascita:</strong> 23/01/1995</p>
+                <p>
+                    <strong>Su di me:</strong>
+                    <blockquote id="quote">"Io non credo nei confini, nelle barriere, nelle bandiere. Credo che apparteniamo tutti, <br>indipendentemente dalle latitudini e dalle longitudini, alla stessa famiglia, che è la famiglia umana" <br> (Vittorio Arrigoni)</blockquote>
+                </p>
+            </section>
+    
+            
+    
+            <!--Formazione-->
+            <section id="formazione">
+    
+               <h2 class="titolo-paragrafo">Formazione</h2>
+               <div class="paragrafo">
+                    <h3>Laurea magistrale in Sviluppo locale e globale</h3>
+                    <p>Conseguita nel 2020 presso <em>l'Alma Mater Studiorum di Bologna</em> con una votazione di <strong>110/110L</strong></p>
+               </div>
+    
+                <div class="paragrafo">
+                    <h3>Laurea triennale in Scienze Politiche e Relazioni Internazionali - <em>Asia-Africa</em></h3>
+                    <p>Conseguita nel 2017 presso <em>l'Università di Napoli "L'Orientale</em> con una votazione di <strong>110/110L</strong></p>
+                </div>
+            </section>
+        </div>
+        
+        
+        <hr>
+
+        <!--Competenze-->
+
+        
+        <section id="competenze">
+
+            <h2 class="titolo-paragrafo">Competenze</h2>
+            <div class="flex-container">
+                <div class="paragrafo tecniche">
+                    <h3>Conoscenze tecniche</h3>
+                    <p class="button">Passa con il mouse qui sopra per scoprire le mie competenze</p>
+                        <ul>
+                            <li><span>HTML: </span> <span>100%</span></li>
+                            <li><span>CSS: </span> <span>100%</span></li>
+                            <li><span>Javascript/Typescript: </span> <span>80%</span></li>
+                            <li><span>Angular.js: </span> <span>60%</span></li>
+                        </ul>
+
+                </div>
+    
+    
+                <div class="paragrafo operative">
+                    <h3>Conoscenze operative</h3>
+                    <dl>
+                        <dt>Sviluppo Web</dt>
+                        <dd>Dai PSD all'HTML, sviluppo di <strong>template per CMS</strong></dd>
+    
+                        <dt>Ottimizzazione CSS</dt>
+                        <dd>Pulizia di codice inusato, <em>minify</em> e verifica compatibilità</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+    </main>
+
+   
+
+    <!--Contatti personali-->
+    <footer id="contatti-personali">
+        <h2 class="titolo-paragrafo">Contatti personali</h2>
+        <address>
+            <p>Email: carmela.guidaaquilante@gmail.com</p>
+            <p>Telefono: +39 346 336 1949</p>
+            <p>PEC: carmela.guidaaquilante@pec.it</p>
+        </address>
+
+        <div id="dati-personali">
+            <small>Autorizzo il trattamento dei dati secondo il decreto vigente.</small>
+        </div>
+
+    </footer>
+    
+
+</body>
+
+
+</html>

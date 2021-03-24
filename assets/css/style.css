@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+
+/*Stile header*/
+header{
+    background-color:rgba(230, 204, 255, 0.7);
+    padding: 25px;
+    border-bottom: 5px solid #660099;
+}
+
+#titolo{
+    font-size: 2em;
+}
+
+#sottotitolo{
+    text-transform: uppercase;
+    margin: 25px 0 2px 0;
+    font-size: 1.2em;
+}
+
+header, h2.titolo-paragrafo, #contatti-personali{
+    text-align: center;
+}
+
+/*Contenitore principale*/
+#main-container{
+    width: 90%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin: auto; 
+}
+
+/*Stile flex-container*/
+.flex-container{
+    display: flex;
+}
+
+h2.titolo-paragrafo{
+    margin: 20px 0;
+}
+
+section, footer{
+    padding:10px;
+    margin:30px;
+}
+
+#quote{
+    text-align: right;
+    font-style: italic;
+    line-height: 1.5em;
+    margin-top: 50px;
+}
+
+hr{
+    border: 2px dashed #660099;
+    opacity: 0.7;
+    margin: 0 10px;
+}
+
+h3{
+    margin-bottom: 15px;;
+}
+
+#formazione strong, #competenze strong, #sottotitolo{
+    color:#660099;
+}
+
+div.paragrafo{
+    padding:15px;
+    margin: 10px;
+}
+
+section#competenze div.paragrafo{
+    border-radius: 10px;
+    width: 50%;
+}
+
+.tecniche{
+    background-color: #eeccff;
+}
+
+.operative{
+    background-color: #ffffcc;
+}
+
+.tecniche li{
+    list-style: none;
+    margin-top: 2px;
+    width: 100%;
+}
+
+.tecniche ul li:nth-of-type(4){
+    width: 60%;
+}
+
+.tecniche ul li:nth-of-type(3){
+    width: 80%;
+}
+
+
+p.button{
+    background-color: #660099;
+    color: white;
+    padding:2px;
+    border: 1px solid black;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Animazione*/
+
+.button:hover + ul li{
+    background-color:#80bfff;
+    display: flex;
+    justify-content: space-between;
+    animation: percentage 4s ease;
+}
+
+
+@keyframes percentage{
+    0% {width:0; background-color: teal;}
+    100% {max-width:100%; background-color: #80bfff;}
+}
+
+
+/*Stile footer*/
+#contatti-personali{
+    border-top: 5px solid #f0f0f0;
+    background-color:  #660099;
+    color: white;
+    line-height: 1.2em;
+}
+
+#dati-personali{
+    font-family: monospace;
+    margin-top:5px;
+    letter-spacing: 0.1em;
+}
+
+dd{
+    text-indent: 1em;
+}
+
+@media screen and (max-width:480px){
+    #titolo{
+        font-size: 1.7rem;
+    }
+
+    .flex-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section#competenze div.paragrafo{
+        width:100%;
+    }
+
+
+}
+
